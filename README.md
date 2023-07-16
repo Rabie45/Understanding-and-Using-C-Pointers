@@ -1,4 +1,7 @@
-﻿**CH 1 Introduction**
+# Summary to Understanding and Using C Pointers
+ 
+ 
+ **CH 1 Introduction**
 
 **Support for dynamic memory**
 
@@ -151,7 +154,6 @@ Size\_t =sizeof(void) à illegal
 **Uintptr we have to use casting**
 
 ![A black and white chart with text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.001.png)
 
 
