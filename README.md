@@ -182,17 +182,14 @@ When two pointers is subtractes from another  we get the difference is not norma
 àmultiple levels of indirection
 
 ![A white background with red text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.004.png)
 
 
 
 ![A screenshot of a computer program
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.005.png)
 
 ![A diagram of a number
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.006.png)
 
 **Constants to pointer:**
@@ -204,19 +201,15 @@ Using constant keyword à protections
 - Pointer can not be used to modify the value it is referencing 
 
 ![A white background with black text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.007.png)
 
 ![A white rectangular box with black text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.008.png)
 
 ![A black and blue text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.009.png) à legal
 
 ![A close up of numbers
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.010.png) à illegal because pci canot be dereferenced to chage what it points to
 
 
@@ -234,13 +227,11 @@ Const int \*const cpi=&limit  cant modify data or pointer
 Pointer to constant pointer to constant
 
 ![A screenshot of a computer
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.011.png)
 
 **Conclusion :**
 
 ![A white box with black text and black check marks
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.012.png)
 
 
@@ -289,11 +280,9 @@ Pi=(int\*) malloc(sizeof(int)) à it will assign the address returned by malloc 
 - **Address lost**
 
 ![A white background with text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.013.png)
 
 ![A close-up of a computer code
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.014.png)
 
 - **Hidden leaks (free function never called)**
@@ -316,7 +305,6 @@ Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172
 
 
 ![A close up of text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.016.png)
 
 
@@ -347,7 +335,6 @@ If we dereferenced of freed pointer the behavior is undefined
 Freeing Memory upon Program Termination:
 
 ![A white text with black text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.018.png)
 
 **Dangling pointers:**
@@ -355,7 +342,6 @@ Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172
 If pointer still references the original memory after it has been freed it called dangling
 
 ![A white paper with black text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.019.png)
 
 
@@ -365,7 +351,6 @@ Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172
 **Example :**
 
 ![A group of text on a white background
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.020.png)
 
 The variable pi will still hold the integer’s address. However, this memory may be reused
@@ -373,13 +358,11 @@ The variable pi will still hold the integer’s address. However, this memory ma
 by the heap manager and may hold data other than an integer.
 
 ![A screenshot of a computer
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.021.png)
 
 **Garbage Collection in C**
 
 ![A white background with black text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.022.png)
 
 **Resource Acquisition Is Initialization:**
@@ -415,13 +398,11 @@ Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172
 - Passing by pointer to the object means the object doesn’t have to be copied 
 
 **Passing Data Using a Pointer:![A screenshot of a computer code
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.025.png)**
 
 **Passing Data by Value**:
 
 ![A computer code with text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.026.png)
 
 **Passing a Pointer to a Constant:**
@@ -429,11 +410,9 @@ Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172
 we are only passing the address of the data and can avoid copying large amounts of memory
 
 ![A close-up of a logo
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.027.png)
 
 ![A math equation with numbers and letters
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.028.png)
 
 **Returning a Pointer:**
@@ -447,11 +426,9 @@ Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172
 àThis makes the allocation and deallocation of the object’s memory the caller’s responsibility.
 
 ![A computer code with text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.029.png)
 
 ![A white background with black text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.030.png)
 
 **Pointers to Local Data:**
@@ -461,7 +438,6 @@ Returning a pointer to local data is an easy mistake to make if you don’t unde
 how the program stack works.
 
 ![A white background with text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.031.png)
 
 **Passing a Pointer to a Pointer**:
@@ -470,7 +446,6 @@ when pointer passed to function it is by value
 If u need to modify the original not the copy we need to pass as a pointer to pointer
 
 ![A screen shot of a computer code
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.032.png)
 
 **Function Pointers:** 
@@ -483,11 +458,9 @@ Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172
 **Declaring function pointers** : must be carful to ensure it is used because doesnot check if correct parameter is passed or not
 
 ![A close-up of text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.033.png)
 
 ![A close-up of a text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.034.png)      
 
 
@@ -498,19 +471,16 @@ Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172
 **Returning function pointer:** Returning a function pointer requires declaring the function’s return type as a function pointer.
 
 ![A screen shot of a computer code
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.035.png)
 
 **Comparing Function Pointers :** Function pointers can be compared to one another using the equality and inequality operators
 
 ![A white background with red and blue text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.036.png)
 
 Casting Function Pointers A pointer to one function can be cast to another type. This should be done with care since the runtime system does not verify that parameters used by a function pointer are correct.
 
 ![A screen shot of a computer code
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.037.png)
 
 
@@ -523,7 +493,6 @@ Jagged array is two dimensional array when each row may have different number of
 **Array notation :**
 
 ` `![A screenshot of a computer
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.038.png)
 
 **Difference  between array and pointers**
@@ -537,21 +506,17 @@ Start with location I moves I positions from this location                      
 The array address passed by value 
 
 ![A close-up of a computer code
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.039.png)
 
 àA common mistake to use sizeof operation to determine number of elements  
 
 ![A close-up of a number
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.040.png)
 
 ![A close-up of a computer code
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.041.png)
 
 ![A white board with red arrows pointing at numbers
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.042.png)
 
 **Pointers and Multidimensional Arrays**
@@ -563,7 +528,6 @@ Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172
 **Passing a Multidimensional Array :**
 
 ![A white background with black text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.044.png)
 
 The following declaration will not work correctly: 
@@ -577,17 +541,14 @@ When passing array with more than one dimension always but the size of the first
 **Allocating Potentially Noncontiguous Memory**
 
 ![A computer code with text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.045.png)
 
 ![A diagram of a diagram
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.046.png)
 
 **Allocating Contiguous Memory**
 
 ![A computer screen shot of a computer code
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.047.png)
 
 
@@ -630,7 +591,6 @@ This area of memory holds the character sequences making up a string. When a lit
 ![](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.050.png)
 
 ![A close up of text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.051.png)
 
 
@@ -651,7 +611,6 @@ When determining the length of a string to be used with the malloc function:
 **Initializing a string from standard input**
 
 ![A close-up of a computer screen
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.053.png)
 
 **Standard String Operations**
@@ -671,7 +630,6 @@ Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172
 **Copying Strings**
 
 ![A group of symbols on a white background
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.055.png)
 
 Two pointers can reference the same string. When two pointers reference the same location, this is called aliasing.
@@ -690,17 +648,14 @@ Concatenating Strings :
 **Example:** 
 
 ![A computer code with text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.057.png)
 
 ![A screenshot of a computer program
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.058.png)
 
 **Passing a Simple String**
 
 ![A computer screen shot of a code
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.059.png)
 
 Passing a Pointer to a Constant char Passing a pointer to a string as a constant char is a very common and useful technique. 
@@ -708,7 +663,6 @@ Passing a Pointer to a Constant char Passing a pointer to a string as a constant
 It passes the string using a pointer, and at the same time prevents the string being passed from being modified.
 
 ![A computer code with text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.060.png)
 
 Passing a String to Be Initialized There are situations where we want a function to return a string initialized by the func tion.
@@ -720,7 +674,6 @@ Passing a String to Be Initialized There are situations where we want a function
 • The function normally returns a pointer to this buffer
 
 ![A close-up of a computer code
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.061.png)
 
 Returning Strings When a function returns a string, it returns the address of the string.
@@ -736,7 +689,6 @@ C supports command line arguments using the traditionally named argc and argv pa
 The second parameter, argv, is normally viewed as a one-dimensional array of string pointers.
 
 ![A computer code with text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.063.png)
 
 **Pointers and Structures :**
@@ -744,15 +696,12 @@ Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172
 **Declaration :**
 
 ![A computer code with text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.064.png)
 
 ![A computer code with blue text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.065.png)
 
 ![A white background with black text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.066.png)
 
 Use (->)  to access the first declaration 
@@ -772,11 +721,9 @@ Use (.) to access the second declaration
 ![](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.067.png)
 
 ![A computer code with blue text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.068.png)
 
 ![A screenshot of a computer
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.069.png)
 
 **Avoiding malloc/free Overhead :**
@@ -805,13 +752,11 @@ The Data Execution Prevention (DEP) technique prevents the execution of code if 
 **Improper Pointer Declaration :**
 
 ![A close-up of a quote
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.070.png)
 
 This declaration declared ptr1 as a pointer to an integer and ptr2 as an integer.
 
 ![A close up of a text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.071.png)
 
 The same problem there 
@@ -831,12 +776,11 @@ The same problem there
 ![](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.072.png)
 
 **The assert function can also be used to test for null pointer values**
-
+ 
 - If the expression is true, then nothing happens.
 - ` `If the expression is false, then the program terminates.
 
 ![A close up of a number
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.073.png)
 
 **Pointer Usage Issues**
@@ -858,7 +802,6 @@ Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172
 Test for NULL:
 
 ![A computer code with text
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.074.png)
 
 **Dangling Pointers:**
@@ -878,7 +821,6 @@ Misusing the sizeof Operator:
 An example of misusing the sizeof operator occurs when we attempt to check our pointer bounds but do it incorrectly.
 
 ![A computer code with numbers and symbols
-
 Description automatically generated](Aspose.Words.d709232f-c4dc-469c-b351-fb9172a94f0a.075.png)
 
 **Bounded Pointers:**
@@ -889,8 +831,4 @@ Double Free Freeing a block of memory twice is referred to as double free
 
 Clearing Sensitive Data:
 
-It is a good idea to overwrite sensitive data in memory once it is no longer needed.
-
-Using Static Analysis Tools
-
-
+It is a good idea to overwrite sensitive data in memory once it is no longe
